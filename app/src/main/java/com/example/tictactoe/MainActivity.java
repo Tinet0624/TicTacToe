@@ -93,97 +93,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        switch (view.getId()){
-            case R.id.button1:
-                if(emptyString.contentEquals(button1.getText()) && playerXTurn){
-                    button1.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button1.getText()) && !playerXTurn){
-                    button1.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button2:
-                if(emptyString.contentEquals(button2.getText()) && playerXTurn){
-                    button2.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button2.getText()) && !playerXTurn){
-                    button2.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button3:
-                if(emptyString.contentEquals(button3.getText()) && playerXTurn){
-                    button3.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button3.getText()) && !playerXTurn){
-                    button3.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button4:
-                if(emptyString.contentEquals(button4.getText()) && playerXTurn){
-                    button4.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button4.getText()) && !playerXTurn){
-                    button4.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button5:
-                if(emptyString.contentEquals(button5.getText()) && playerXTurn){
-                    button5.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button5.getText()) && !playerXTurn){
-                    button5.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button6:
-                if(emptyString.contentEquals(button6.getText()) && playerXTurn){
-                    button6.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button6.getText()) && !playerXTurn){
-                    button6.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button7:
-                if(emptyString.contentEquals(button7.getText()) && playerXTurn){
-                    button7.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button7.getText()) && !playerXTurn){
-                    button7.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button8:
-                if(emptyString.contentEquals(button8.getText()) && playerXTurn){
-                    button8.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button8.getText()) && !playerXTurn){
-                    button8.setText(R.string.O);
-                    playerX();
-                }
-                break;
-            case R.id.button9:
-                if(emptyString.contentEquals(button9.getText()) && playerXTurn){
-                    button9.setText(R.string.X);
-                    playerO();
-                }
-                if(emptyString.contentEquals(button9.getText()) && !playerXTurn){
-                    button9.setText(R.string.O);
-                    playerX();
-                }
-                break;
+        Button clickedButton = (Button) findViewById(view.getId());
+
+        if(emptyString.contentEquals(clickedButton.getText()) && playerXTurn){
+            clickedButton.setText(R.string.X);
+            playerO();
+        }
+        if(emptyString.contentEquals(clickedButton.getText()) && !playerXTurn){
+            clickedButton.setText(R.string.O);
+            playerX();
         }
     }
 }
