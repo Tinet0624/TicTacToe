@@ -11,7 +11,7 @@
         android:id="@+id/txtPlayerTurn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player X's Turn"
+        android:text="@string/xPLayer"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,13 +28,14 @@
         android:layout_marginTop="92dp"
         android:backgroundTint="#E78F8E"
         android:onClick="newGameOnClick"
-        android:text="New Game"
+        android:text="@string/newGame"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPlayerTurn"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.032"
+        tools:ignore="TextContrastCheck" />
 
     <TableLayout
         android:layout_width="344dp"
